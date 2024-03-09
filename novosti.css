@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap');
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Nav */
+.nav-container{
+    position:sticky;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #0b0f5f;
+    top: 0vh;
+    z-index: 100;
+    box-shadow: 0px 0px 25px black;
+}
+#navBar-content{
+    border: 2px solid green;
+    width: 80%;
+}
+.nav-container #logo{
+    position: absolute;
+    width: 8vw;
+    left: 1.5vw;
+}
+.nav-container #name{
+    width: 23vw;
+    position: absolute;
+    right: 1.5vw;
+}
+.nav-container a{
+    text-decoration: none;
+    color: white;
+    background-color: #eeb226b6;
+    padding: 15px;
+    border-radius: 100% 0% 20% 0%;
+    margin: 10px;
+    font-size: 1.6vw;
+    transition-duration: 500ms;
+}
+
+.nav-container a:hover{
+    border-radius: 30% 10% 30% / 30%;
+}
+
+.nav-container .active{
+    background-color: #a6abf4;
+    color: white;
+}
+.navigation{
+    left: 50vh;
+}
+
+/* news */
+
+.novosti{
+    z-index: 1;
+    position: absolute;
+    top: 13vh;
+}
+
+.news-container{
+    margin: 20px;
+    margin-top: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.news{
+    display: flex;
+    margin: 20px;
+    width: 80%;
+}
+.news-container .text-container{
+    width: 50%;
+}
+.news-container .news-image{
+    width: 50%;
+    height: 50vh;
+    float: right;
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.more-news{
+    width: 15vh;
+    height: 5vh;
+    padding: 2vh;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: white;
+    background-color: #eeb226;
+}
