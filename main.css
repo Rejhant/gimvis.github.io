@@ -7,7 +7,7 @@ body{
 }
 /* greet-container */
 .greet-container{
-    width: 100vw;
+    width: 100%;
     height: 101vh;
     background-image: url(images/video.png);
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body{
 #greet-buttons{
     position: absolute;
     bottom: 15vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 #greet-buttons button{
@@ -262,6 +262,69 @@ body{
     font-size: 4vw;
     letter-spacing: 2vw;
     bottom: 20vw;
+}
+
+/* slider */
+
+.slider-container .title{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 9vh;
+    letter-spacing: 1.5vh;
+}
+.slider-container .title::after, .slider-container .title::before{
+    margin: 1.2vh auto;
+    content: "";
+    width: 30vh;
+    height: 4px;
+    background-color: white;
+    display: block;
+}
+
+.slider-container .title::before{
+    margin-right: 2.7vh;
+}
+
+.slider-container{
+    width: 100%;
+    margin-top: 4vh;
+    color: white;
+    height: 115vh;
+    background-color: #40438b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.slides{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    overflow-x:hidden;
+    transition: transform 1s ease;
+}
+
+.slide{
+    transition: transform 1s ease;
+    text-align: center;
+}
+
+.slide img{
+    width: 23vw;
+    height: 22vw;
+    margin: 2vw;
+    transition: transform 1s ease;
+}
+
+.slider-container .fa-angle-right::before, 
+.slider-container .fa-angle-left::before{
+    font-size: 10vw;
+    cursor: pointer;
 }
 
 /* footer */

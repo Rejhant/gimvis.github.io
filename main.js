@@ -34,3 +34,46 @@ window.addEventListener("scroll", startCount => {
         }, 60);
     }
 });
+
+// slider
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    const nxtBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    let slideIndex = 0;
+
+    nxtBtn.addEventListener("click", () => {
+        if (slideIndex == 0) {
+            slideIndex++;
+            const translateXValue = -slideIndex * 300; 
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${translateXValue}%)`;
+            });
+        }
+        else if (slideIndex == 1) {
+            slideIndex--;
+            const translateXValue = slideIndex * 300; 
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${translateXValue}%)`;
+            });
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if (slideIndex == 1) {
+            slideIndex--;
+            const translateXValue = -slideIndex * 300; 
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${translateXValue}%)`;
+            });
+        }
+        else if (slideIndex == 0) {
+            slideIndex++;
+            const translateXValue = -slideIndex * 300;
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${translateXValue}%)`;
+            });
+        }
+    });
+});
