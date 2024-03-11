@@ -60,54 +60,28 @@ body{
     left: 50vh;
 }
 
-/* news */
+/* onama */
 
-.novosti{
-    z-index: 1;
+.onama-naslov{
+    width: 55vw;
+    height: 37vh;
     position: absolute;
     top: 13vh;
 }
 
-.news-container{
-    margin: 20px;
-    margin-top: 0;
-    width: 100%;
-    background-color: #f2f2f2;
+.onama-container{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    position: relative;
+    justify-content: center;
+    background-color: #f2f2f2;
+    background-image: url("../pattern.png");
+    background-size: cover;
+    background-position: center;
 }
 
-.news{
-    display: flex;
-    margin: 20px;
-    width: 80%;
+.onama-text{
+    width: 60%;
 }
-.news-container .text-container{
-    width: 50%;
-}
-.news-container .news-image{
-    width: 50%;
-    height: 50vh;
-    float: right;
-    background-color: lightgray;
-    margin: 10px;
-}
-
-.more-news{
-    width: 15vh;
-    height: 5vh;
-    padding: 2vh;
-    text-decoration: none;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 2vh;
-    color: white;
-    background-color: #eeb226;
-}
-
-/* footer */
 
 /* footer */
 #footer-wave{
