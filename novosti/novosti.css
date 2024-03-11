@@ -69,7 +69,7 @@ body{
 }
 
 .news-container{
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     margin-top: 0;
     width: 100%;
     background-color: #f2f2f2;
@@ -95,6 +95,14 @@ body{
     margin: 10px;
 }
 
+.news-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
 .more-news{
     width: 15vh;
     height: 5vh;
@@ -115,6 +123,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-color: #f2f2f2;
     height: 10vw;
     width: 100%;
 }
