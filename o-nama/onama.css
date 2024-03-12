@@ -59,6 +59,32 @@ body{
 .navigation{
     left: 50vh;
 }
+.navigationItems{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-btn{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 12vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0f5f;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-smjer{
+    border-radius: 30% 10% 30% / 30% !important;
+}
 
 /* onama */
 
@@ -75,8 +101,7 @@ body{
     justify-content: center;
     background-color: #f2f2f2;
     background-image: url("../pattern.png");
-    background-size: cover;
-    background-position: center;
+    background-size: 50%;
 }
 
 .onama-text{
