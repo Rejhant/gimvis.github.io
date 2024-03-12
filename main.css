@@ -12,6 +12,7 @@ body{
     background-image: url(images/video.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +145,12 @@ body{
         top: -15vh;
     }
 }
+
+.navigationItems{
+    display: flex;
+    align-items: center;
+}
+
 #navBar-content{
     border: 2px solid green;
     width: 80%;
@@ -167,6 +174,7 @@ body{
     margin: 10px;
     font-size: 1.6vw;
     transition-duration: 500ms;
+    height: 100%;
 }
 
 .nav-container a:hover{
@@ -181,6 +189,28 @@ body{
     left: 50vh;
 }
 
+.dropdown-btn{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 13vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0f5f;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar-smjer{
+    border-radius: 30% 10% 30% / 30% !important;
+}
 /* why */
 .why-container{
     height: 90vh;
